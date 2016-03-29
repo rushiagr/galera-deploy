@@ -1,3 +1,4 @@
+#! /bin/bash -x
 sudo service mysql stop  #or mysqld
 sudo killall -9 mysql
 sudo killall -9 mysqld

@@ -1,0 +1,5 @@
+sudo iptables --append INPUT --in-interface eth0 --protocol tcp --match tcp --dport 3306  --source 10.140.214.1/24 --jump ACCEPT
+sudo iptables --append INPUT --in-interface eth0 --protocol tcp --match tcp --dport 4567  --source 10.140.214.1/24 --jump ACCEPT
+sudo iptables --append INPUT --in-interface eth0 --protocol tcp --match tcp --dport 4568  --source 10.140.214.1/24 --jump ACCEPT
+sudo iptables --append INPUT --in-interface eth0 --protocol tcp --match tcp --dport 4444  --source 10.140.214.1/24 --jump ACCEPT
+sudo iptables --append INPUT --in-interface eth0 --protocol udp --match udp --dport 4567  --source 10.140.214.1/24 --jump ACCEPT
